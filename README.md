@@ -7,7 +7,7 @@ A simple implementation of the classic Tic Tac Toe game built with HTML, CSS, an
   <img src="https://github.com/sankeer28/tic-tac-toe/assets/112449287/c3bc7a05-1d8c-496a-8ba9-c0e8dd4a83c0" />
 </p>
 
-## [Demo](https://sankeer28.github.io/tic-tac-toe/)
+## [Demo](https://tictactoe-unbeatable.vercel.app/)
 
 ## Unbeatable Computer AI Algorithm
 The 'computer' in this game utilizes a depth-limited minimax approach.

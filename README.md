@@ -4,7 +4,7 @@
 A simple implementation of the classic Tic Tac Toe game built with HTML, CSS, and JavaScript.
 
 <p align="center">
-  <img src="https://github.com/sankeer28/tic-tac-toe/assets/112449287/c3bc7a05-1d8c-496a-8ba9-c0e8dd4a83c0 />
+  <img src="https://github.com/sankeer28/tic-tac-toe/assets/112449287/c3bc7a05-1d8c-496a-8ba9-c0e8dd4a83c0" />
 </p>
 
 ## [Demo](https://sankeer28.github.io/tic-tac-toe/)

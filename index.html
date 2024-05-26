@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tic Tac Toe</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Tic Tac Toe</h1>
+    <div class="menu">
+        <button onclick="startGame('1v1')">Player vs Player (1v1)</button>
+        <button onclick="startGame('vsAI')">Player vs Computer</button>
+    </div>
+
+    <div class="board" style="display: none;"></div>
+
+    <div class="reset-button" onclick="resetGame()">Reset</div>
+
+    <div class="github-link" style="color: black;">
+        <p><a href="https://github.com/sankeer28/tic-tac-toe" target="_blank" style="color: black; text-decoration: none;">GitHub</a></p>
+    </div>
+    
+    
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

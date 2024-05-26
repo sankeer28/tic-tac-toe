@@ -9,9 +9,8 @@ This is a simple implementation of the classic Tic Tac Toe game built with HTML,
 
 ## [Demo](https://sankeer28.github.io/tic-tac-toe/)
 
-## 99% Unbeatable Computer AI Algorithm
+## Unbeatable Computer AI Algorithm
 The 'computer' in this game utilizes a depth-limited minimax approach.
-
 
  **Depth-Limited Minimax Approach:**
 The algorithm uses a depth-limited minimax approach to search through possible game states up to a certain depth. Minimax is a decision-making algorithm commonly used in two-player games to determine the best move for the current player, assuming that the opponent also plays optimally.

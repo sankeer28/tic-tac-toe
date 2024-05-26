@@ -16,11 +16,11 @@ The 'computer' in this game utilizes a depth-limited minimax approach.
 The algorithm uses a depth-limited minimax approach to search through possible game states up to a certain depth. Minimax is a decision-making algorithm commonly used in two-player games to determine the best move for the current player, assuming that the opponent also plays optimally.
 
  ### **Key Steps of the Algorithm:**
-- Check if AI can win: The algorithm first checks if there's a winning move available for the AI. It iterates through each empty cell on the board and evaluates whether placing the AI's mark in that cell would result in a win. If a winning move is found, the AI places its mark there and wins the game.
+- **Check if AI can win:** The algorithm first checks if there's a winning move available for the AI. It iterates through each empty cell on the board and evaluates whether placing the AI's mark in that cell would result in a win. If a winning move is found, the AI places its mark there and wins the game.
 
-- Check if player can win and block: If the AI cannot win on the next move, it checks if the player has a winning move available. Similar to the previous step, it iterates through each empty cell, evaluates whether placing the player's mark in that cell would result in a win, and blocks the player's winning move by placing its mark in that cell.
+- **Check if player can win and block:** If the AI cannot win on the next move, it checks if the player has a winning move available. Similar to the previous step, it iterates through each empty cell, evaluates whether placing the player's mark in that cell would result in a win, and blocks the player's winning move by placing its mark in that cell.
 
-- Place mark randomly: If neither the AI nor the player has a winning move available, the AI places its mark randomly in one of the empty cells. This adds an element of randomness to the AI's behavior and prevents it from making predictable moves.
+- **Place mark randomly:** If neither the AI nor the player has a winning move available, the AI places its mark randomly in one of the empty cells. This adds an element of randomness to the AI's behavior and prevents it from making predictable moves.
 
 ### **Limitations and Improvements:**
 The current implementation of the AI algorithm is limited to considering only immediate winning or blocking moves. It doesn't look ahead beyond one move.

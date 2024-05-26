@@ -5,14 +5,6 @@ This is a simple implementation of the classic Tic Tac Toe game built with HTML,
 
 ![image](https://github.com/sankeer28/tic-tac-toe/assets/112449287/e00edcd0-ca78-4be9-8d23-ba89318cb8aa)
 
-
-## Features
-
-- Play against another player or against the computer.
-- Responsive design, playable on both desktop and mobile devices.
-- Winning and draw detection.
-- Restart the game at any time.
-
 ## Demo
 
 You can play the game [online](https://sankeer28.github.io/tic-tac-toe/)

@@ -10,7 +10,7 @@ A simple implementation of the classic Tic Tac Toe game built with HTML, CSS, an
 ## [Demo](https://tictactoe-unbeatable.vercel.app/)
 
 ## Unbeatable Computer AI Algorithm
-The 'computer' in this game utilizes a depth-limited minimax approach.
+The 'computer' in this game utilizes a depth-limited [minimax approach.](https://www.geeksforgeeks.org/minimax-algorithm-in-game-theory-set-1-introduction/)
 
  ### **Depth-Limited Minimax Approach:**
 The algorithm uses a depth-limited minimax approach to search through possible game states up to a certain depth. Minimax is a decision-making algorithm commonly used in two-player games to determine the best move for the current player, assuming that the opponent also plays optimally.
@@ -23,7 +23,7 @@ The algorithm uses a depth-limited minimax approach to search through possible g
 - **Place mark randomly:** If neither the AI nor the player has a winning move available, the AI places its mark randomly in one of the empty cells. This adds an element of randomness to the AI's behavior and prevents it from making predictable moves.
 
 ### **Limitations and Improvements:**
-The current implementation of the AI algorithm is limited to considering only immediate winning or blocking moves. It doesn't look ahead beyond one move.
-There is no difficulty selector.
+- The current implementation of the AI algorithm is limited to considering only immediate winning or blocking moves. It doesn't look ahead beyond one move.
+- There is no difficulty selector.
 
 

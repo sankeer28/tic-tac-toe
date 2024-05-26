@@ -7,9 +7,7 @@ This is a simple implementation of the classic Tic Tac Toe game built with HTML,
   <img src="https://github.com/sankeer28/tic-tac-toe/assets/112449287/cd329a40-f694-44bd-b166-1ea9ca4185dc" />
 </p>
 
-## Demo
-
-You can play the game [online](https://sankeer28.github.io/tic-tac-toe/)
+## [Demo](https://sankeer28.github.io/tic-tac-toe/)
 
 ## 99% Unbeatable Computer AI Algorithm
 The 'computer' in this game utilizes a basic heuristic search combined with a depth-limited minimax approach.

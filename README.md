@@ -10,7 +10,7 @@ This is a simple implementation of the classic Tic Tac Toe game built with HTML,
 You can play the game [online](https://sankeer28.github.io/tic-tac-toe/)
 
 ## Computer AI Algorithm
-The computer player in this Tic Tac Toe game utilizes a basic heuristic search combined with a depth-limited minimax approach to make intelligent moves. Here's how the algorithm works:
+The 'computer' in this game utilizes a basic heuristic search combined with a depth-limited minimax approach.
 
 1.**Basic Heuristic Search**
 The AI evaluates the game state to decide its next move. It aims to win the game or prevent the opponent from winning by considering potential future moves.
@@ -27,7 +27,6 @@ The algorithm employs a depth-limited minimax approach to search through possibl
 
 4. **Limitations and Improvements:**
 The current implementation of the AI algorithm is limited to considering only immediate winning or blocking moves. It doesn't look ahead beyond one move.
-For a more advanced AI, you could implement a deeper search using recursive minimax with alpha-beta pruning. This would allow the AI to consider multiple future moves and choose the best move based on a deeper evaluation of the game state.
-
+There is no difficulty selector.
 
 

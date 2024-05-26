@@ -20,7 +20,6 @@ function startGame(type) {
     cells = [];
     board.innerHTML = '';
 
-
     for (let i = 0; i < 9; i++) {
         const cell = document.createElement('div');
         cell.classList.add('cell');
@@ -36,10 +35,10 @@ function startGame(type) {
 }
 
 function handleCellClick() {
-    if (winner) return; 
+    if (winner) return;
 
     const index = parseInt(this.dataset.index);
-    if (cells[index].textContent !== '') return; 
+    if (cells[index].textContent !== '') return;
 
     cells[index].textContent = currentPlayer;
     if (checkWinner()) {
@@ -81,6 +80,7 @@ function checkWinner() {
 function checkDraw() {
     return cells.every(cell => cell.textContent !== '');
 }
+
 function makeAIMove() {
     let bestScore = -Infinity;
     let move;
@@ -96,7 +96,24 @@ function makeAIMove() {
         }
     }
     cells[move].textContent = 'O';
-    currentPlayer = 'X';
+    
+    if (checkWinner()) {
+        winner = 'O';
+        const winningCells = getWinningCells();
+        winningCells.forEach(cellIndex => cells[cellIndex].classList.add('winner'));
+        setTimeout(() => {
+            if (gameType === 'vsAI') {
+                alert('Computer wins!');
+            } else {
+                alert(`You win!`);
+            }
+        }, 100);
+    } else if (checkDraw()) {
+        cells.forEach(cell => cell.classList.add('draw'));
+        setTimeout(() => alert("It's a draw!"), 100);
+    } else {
+        currentPlayer = 'X';
+    }
 }
 
 function minimax(board, depth, isMaximizing) {
@@ -130,8 +147,6 @@ function minimax(board, depth, isMaximizing) {
         return bestScore;
     }
 }
-
-
 
 function resetGame() {
     const board = document.querySelector('.board');

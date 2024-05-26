@@ -1,10 +1,10 @@
 
 # Tic Tac Toe 
 
-This is a simple implementation of the classic Tic Tac Toe game built with HTML, CSS, and JavaScript.
+A simple implementation of the classic Tic Tac Toe game built with HTML, CSS, and JavaScript.
 
 <p align="center">
-  <img src="https://github.com/sankeer28/tic-tac-toe/assets/112449287/cd329a40-f694-44bd-b166-1ea9ca4185dc" />
+  <img src="https://github.com/sankeer28/tic-tac-toe/assets/112449287/c3bc7a05-1d8c-496a-8ba9-c0e8dd4a83c0 />
 </p>
 
 ## [Demo](https://sankeer28.github.io/tic-tac-toe/)

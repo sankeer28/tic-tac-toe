@@ -81,41 +81,56 @@ function checkWinner() {
 function checkDraw() {
     return cells.every(cell => cell.textContent !== '');
 }
-
 function makeAIMove() {
-    let emptyCells = cells.reduce((acc, cell, index) => {
-        if (cell.textContent === '') acc.push(index);
-        return acc;
-    }, []);
-
- 
-    for (let i = 0; i < emptyCells.length; i++) {
-        cells[emptyCells[i]].textContent = 'O';
-        if (checkWinner()) {
-            winner = 'O';
-            const winningCells = getWinningCells();
-            winningCells.forEach(cellIndex => cells[cellIndex].classList.add('winner'));
-            setTimeout(() => alert(`Computer wins!`), 100);
-            return;
+    let bestScore = -Infinity;
+    let move;
+    for (let i = 0; i < 9; i++) {
+        if (cells[i].textContent === '') {
+            cells[i].textContent = 'O';
+            let score = minimax(cells, 0, false);
+            cells[i].textContent = '';
+            if (score > bestScore) {
+                bestScore = score;
+                move = i;
+            }
         }
-        cells[emptyCells[i]].textContent = '';
     }
-
-
-    for (let i = 0; i < emptyCells.length; i++) {
-        cells[emptyCells[i]].textContent = 'X';
-        if (checkWinner()) {
-            cells[emptyCells[i]].textContent = 'O';
-            currentPlayer = 'X';
-            return;
-        }
-        cells[emptyCells[i]].textContent = '';
-    }
-
-    const randomIndex = Math.floor(Math.random() * emptyCells.length);
-    cells[emptyCells[randomIndex]].textContent = 'O';
+    cells[move].textContent = 'O';
     currentPlayer = 'X';
 }
+
+function minimax(board, depth, isMaximizing) {
+    if (checkWinner()) {
+        return isMaximizing ? -1 : 1;
+    } else if (checkDraw()) {
+        return 0;
+    }
+
+    if (isMaximizing) {
+        let bestScore = -Infinity;
+        for (let i = 0; i < 9; i++) {
+            if (board[i].textContent === '') {
+                board[i].textContent = 'O';
+                let score = minimax(board, depth + 1, false);
+                board[i].textContent = '';
+                bestScore = Math.max(score, bestScore);
+            }
+        }
+        return bestScore;
+    } else {
+        let bestScore = Infinity;
+        for (let i = 0; i < 9; i++) {
+            if (board[i].textContent === '') {
+                board[i].textContent = 'X';
+                let score = minimax(board, depth + 1, true);
+                board[i].textContent = '';
+                bestScore = Math.min(score, bestScore);
+            }
+        }
+        return bestScore;
+    }
+}
+
 
 
 function resetGame() {

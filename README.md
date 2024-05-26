@@ -15,7 +15,7 @@ This is a simple implementation of the classic Tic Tac Toe game built with HTML,
 
 ## Demo
 
-You can play the game online .
+You can play the game [online](https://sankeer28.github.io/tic-tac-toe/)
 
 ## Computer AI Algorithm
 The computer player in this Tic Tac Toe game utilizes a basic heuristic search combined with a depth-limited minimax approach to make intelligent moves. Here's how the algorithm works:
